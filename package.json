@@ -16,7 +16,9 @@
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook",
     "test": "jest --coverage",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@hot-loader/react-dom": "16.13.0",
@@ -52,7 +54,8 @@
     "recharts": "2.0.4",
     "styled-components": "5.1.0",
     "styled-media-query": "2.1.2",
-    "tippy.js": "6.1.0"
+    "tippy.js": "6.1.0",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@babel/core": "7.9.0",
@@ -116,5 +119,6 @@
     "webpack-cli": "3.3.11",
     "webpack-dev-server": "3.10.3",
     "webpack-merge": "4.2.2"
-  }
+  },
+  "snyk": true
 }
